@@ -1,16 +1,19 @@
-# DenVex Portfolio 🚀
+# Denys Sliusarchyk Portfolio 🚀
 
-**DenVex Portfolio** is a modern web portfolio showcasing Full-Stack development skills. The project features a Matrix-style animated background, an interactive side menu, auto-typing text, and a responsive design. Built with **HTML, CSS, JavaScript**, with future expansions planned for **React, Node.js, and API integrations**.
+Denys Sliusarchyk Portfolio is a modern web portfolio showcasing Full-Stack development skills. The project features a Matrix-style animated background, interactive menu, auto-typing text, and a responsive design. Built with HTML, CSS, JavaScript, with future plans to expand using React, Node.js, and API integrations.
 
 📌 **Features:**
 
-- Dynamic Matrix animation background
-- Interactive side menu
-- Auto-typing text effect
-- Social media links
+🔹 Dynamic Matrix-style animation
+🔹 Interactive menu with animated transitions
+🔹 Auto-typing text effect
+🔹 Embedded social media links
+🔹 Responsive design for various devices
 
 📌 **How to Run:**
 
 1. **Clone the repository:**  
-   git clone https://github.com/dsliusarchyk/denvex.website.git
+   git clone git@github.com:dsliusarchyk/denyssliusarchyk.com.git
 2. **Open index.html in your browser**
+
+:)
