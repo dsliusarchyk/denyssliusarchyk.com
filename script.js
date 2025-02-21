@@ -35,6 +35,25 @@ document.addEventListener("click", function(event) {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollUpBtn = document.getElementById("scrollUp");
+    const scrollDownBtn = document.getElementById("scrollDown");
+
+    scrollUpBtn.addEventListener("click", () => {
+        window.scrollBy({
+            top: -window.innerHeight,
+            behavior: "smooth",
+        });
+    });
+
+    scrollDownBtn.addEventListener("click", () => {
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: "smooth",
+        });
+    });
+});
+
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
 
