@@ -31,14 +31,15 @@ Year: 2025
   </head>
   <body>
     <canvas id="matrixCanvas"></canvas>
-    <button id="menuBtn" class="menu-btn" onclick="toggleMenu()">
-      <img src="./icons/code-menu.svg" alt="Menu" />
-    </button>
+
 
     <div class="container">
       <header id="welcome">
         <h1 id="typing-text">My Portfolio</h1>
         <p class="subtitle">Innovation Through Technology & Expertise</p>
+             <button id="menuBtn" class="menu-btn" onclick="toggleMenu()">
+      <img src="./icons/code-menu.svg" alt="Menu" />
+    </button>
       </header>
 
       <div id="sideMenu" class="side-menu">
@@ -120,9 +121,13 @@ Year: 2025
       </section>
     </div>
 
-    <footer>
-      <p>&copy; <span id="current-year"></span> Denys Sliusarchyk. <br> All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>
+        &copy; <span id="current-year"></span> Denys Sliusarchyk <br>
+        Code. Create. Innovate.
+    </p>
+</footer>
+
 
     <script>
       document.getElementById("current-year").textContent = new Date().getFullYear();
