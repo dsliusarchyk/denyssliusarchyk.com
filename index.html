@@ -1,0 +1,122 @@
+<!-- 
+============================================
+Denys Sliusarchyk Portfolio - Modern Developer Website
+Created by: Denys Sliusarchyk 🚀
+Year: 2025
+============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Denys Sliusarchyk - Full-Stack Developer" />
+    <meta property="og:description" content="Portfolio of Denys Sliusarchyk - Full-Stack Developer and IT Leader." />
+    <meta property="og:image" content="https://denyssliusarchyk.com/icons/preview.png" />
+    <meta property="og:url" content="https://denyssliusarchyk.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Denys Sliusarchyk - Full-Stack Developer" />
+    <meta name="twitter:description" content="Explore my portfolio and projects." />
+    <meta name="twitter:image" content="https://denyssliusarchyk.com/icons/preview.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Denys Sliusarchyk" />
+    <meta name="description" content="Denys Sliusarchyk - Full-Stack Developer with 15+ years of experience." />
+    <meta name="keywords" content="Denys Sliusarchyk, portfolio, web development, full-stack, JavaScript, React, Node.js" />
+    <title>Denys Sliusarchyk - Full-Stack Developer</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
+    <script defer src="./script.js"></script>
+    <script defer src="./matrix.js"></script>
+  </head>
+  <body>
+    <canvas id="matrixCanvas"></canvas>
+    <button id="menuBtn" class="menu-btn" onclick="toggleMenu()">
+      <img src="./icons/code-menu.svg" alt="Menu" />
+    </button>
+
+    <div class="container">
+      <header id="welcome">
+        <h1 id="typing-text">My Portfolio</h1>
+        <p class="subtitle">Innovation Through Technology & Expertise</p>
+      </header>
+
+      <div id="sideMenu" class="side-menu">
+        <button class="close-btn" onclick="toggleMenu()">✖</button>
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+          <li><a href="#development-areas" onclick="toggleMenu()">Dev Fields</a></li>
+          <li><a href="#tech-stack" onclick="toggleMenu()">Tech Stack</a></li>
+          <li><a href="#social-links" onclick="toggleMenu()">Connect with Me</a></li>
+        </ul>
+      </div>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="./photos/denys-photo.JPG" alt="Denys Sliusarchyk" class="profile-photo" />
+        <p></p>
+        <p>
+          Hi, I'm Denys. I am an experienced professional with 15+ years of expertise in business management, IT project execution, and the successful launch of companies in Ukraine, Central Asia, and Europe. Currently, I focus on innovative technologies, IT growth, and Full Stack development, expanding my professional journey and presence in the US market.
+        </p>
+        <div class="flags">
+          <img src="flags/ukraine.png" alt="Ukraine" title="Ukraine" />
+          <img src="flags/kazakhstan.png" alt="Kazakhstan" title="Kazakhstan" />
+          <img src="flags/eu.png" alt="European Union" title="European Union" />
+          <img src="flags/usa.png" alt="United States" title="United States" />
+        </div>
+      </section>
+      </section>
+
+      <section id="development-areas">
+        <h2>Dev Fields</h2>
+        <ul>
+          <li>Frontend Development</li>
+          <li>Full-Stack Web Applications</li>
+          <li>Backend Development</li>
+          <li>DevOps & Cloud Deployments</li>
+          <li>Software Testing & QA</li>
+          <li>Algorithmic Programming</li>
+        </ul>
+      </section>
+
+      <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Redux, TypeScript</li>
+          <li>Node.js, Python, SQL</li>
+          <li>REST API, GraphQL</li>
+          <li>Git, DevOps, Docker</li>
+          <li>Testing (Jest, Cypress)</li>
+          <li>Algorithms & Data Structures</li>
+        </ul>
+      </section>
+
+      <section id="social-links">
+        <h2>Connect with Me</h2>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/denys-s-362a7581" target="_blank"> <img src="./icons/linkedin.svg" alt="LinkedIn" /> LinkedIn </a>
+          </li>
+          <li>
+            <a href="https://x.com/DS239433537" target="_blank"> <img src="./icons/twitter.svg" alt="Twitter" /> Twitter(X)</a>
+          </li>
+          <li>
+            <a href="https://dev.to/dsliusarchyk" target="_blank"> <img src="./icons/devto.svg" alt="Dev.to" /> Dev.to </a>
+          </li>
+          <li>
+            <a href="https://github.com/dsliusarchyk" target="_blank"> <img src="./icons/github.svg" alt="GitHub" /> GitHub </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; <span id="current-year"></span> Denys Sliusarchyk. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

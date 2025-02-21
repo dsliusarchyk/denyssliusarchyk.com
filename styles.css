@@ -1,0 +1,317 @@
+/*
+=================================================
+Denys Sliusarchyk Portfolio - Modern Developer Website 
+Created by: Denys Sliusarchyk 🚀 
+Year: 2025
+=================================================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0D0D0D;
+    color: #00FF41;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#welcome,
+#about,
+#Development-Areas,
+#tech-stack {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.profile-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.flags {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.flags img {
+    width: 32px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.flags img:hover {
+    transform: scale(1.1);
+}
+
+#social-links {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}
+
+#social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#social-links li {
+    margin: 10px 0;
+}
+
+#social-links a {
+    color: #00FF41;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+#social-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#social-links a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-position: inside;
+    padding: 0;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#contact p {
+    text-align: center;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    box-shadow: 2px 0 10px rgba(0, 255, 65, 0.3);
+    transition: left 0.4s ease-in-out;
+    padding-top: 60px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+.side-menu ul li a {
+    color: #00FF41;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: white;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    color: #00FF41;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.menu-btn img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.menu-btn:hover img {
+    transform: scale(1.2);
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.95);
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.side-menu.open {
+    transform: translateX(0);
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.side-menu ul li {
+    padding: 20px;
+}
+
+.side-menu ul li a {
+    color: #00FF41;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.side-menu ul li a:hover {
+    color: white;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #00FF41;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    font-size: clamp(30px, 5vw, 36px);
+    white-space: nowrap;
+}
+
+#about,
+#development-areas,
+#tech-stack,
+#social-links {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.open {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #00ff00;
+    background-color: #111;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+
+#typing-text {
+    text-align: center;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section p {
+    text-align: justify;
+}
+
+a {
+    color: #00FF41;
+}
+
+a:hover {
+    text-decoration: underline;
+}
