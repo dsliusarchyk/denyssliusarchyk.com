@@ -40,19 +40,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const scrollDownBtn = document.getElementById("scrollDown");
 
     scrollUpBtn.addEventListener("click", () => {
-        window.scrollBy({
-            top: -window.innerHeight,
+        window.scrollTo({
+            top: 0,
+            left: 0,
             behavior: "smooth",
         });
+
+        setTimeout(() => {
+            if (window.scrollY > 0) {
+                window.scrollTo(0, 0);
+            }
+        }, 1000);
     });
 
     scrollDownBtn.addEventListener("click", () => {
-        window.scrollBy({
-            top: window.innerHeight,
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
             behavior: "smooth",
         });
     });
 });
+
 
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
