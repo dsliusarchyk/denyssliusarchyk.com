@@ -288,7 +288,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  font-size: clamp(30px, 5vw, 36px);
+  font-size: clamp(24px, 6vw, 36px); /* змінено для адаптивності */
   white-space: nowrap;
 }
 
@@ -349,4 +349,21 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  #typing-text {
+    font-size: 28px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1em;
+  }
+
+  h2,
+  h3 {
+    font-size: 22px;
+  }
 }
