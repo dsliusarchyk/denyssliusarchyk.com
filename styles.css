@@ -356,7 +356,7 @@ a:hover {
 
 @media (max-width: 480px) {
   #typing-text {
-    font-size: 22px;
+    font-size: 24px;
     white-space: nowrap;
     overflow: hidden;
     text-align: center;
