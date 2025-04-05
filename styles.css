@@ -356,17 +356,18 @@ a:hover {
 
 @media (max-width: 480px) {
   #typing-text {
-    font-size: 28px;
-    white-space: normal;
+    font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
     text-align: center;
   }
 
   .subtitle {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   h2,
   h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
