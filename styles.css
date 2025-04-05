@@ -288,8 +288,8 @@ h1,
 h2,
 h3 {
   text-align: center;
-  font-size: clamp(24px, 6vw, 36px); /* змінено для адаптивності */
-  white-space: nowrap;
+  font-size: clamp(24px, 6vw, 36px);
+  white-space: normal;
 }
 
 #about-me,
@@ -336,6 +336,9 @@ footer {
 }
 
 #typing-text {
+  font-size: clamp(20px, 6vw, 36px);
+  white-space: normal;
+  word-break: break-word;
   text-align: center;
 }
 
